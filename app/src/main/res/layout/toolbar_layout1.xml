@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_search"
+            android:layout_width="272dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Search... "
+            android:textColor="@color/colorWhite"
+            android:onClick="Search_Layout"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

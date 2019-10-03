@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "170204986631",
+    "firebase_url": "https://applicationform-b6c4a.firebaseio.com",
+    "project_id": "applicationform-b6c4a",
+    "storage_bucket": "applicationform-b6c4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170204986631:android:e2783b377c0b8a12",
+        "android_client_info": {
+          "package_name": "com.example.application_form"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170204986631-lr9hj3rjhbag1qdk2ia6p508td69qcib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.application_form",
+            "certificate_hash": "bc3b07cac7bf6ac1c3921509a24fe08ebb3f16ae"
+          }
+        },
+        {
+          "client_id": "170204986631-ejsafuj5hu0pqfd5sv3qekhdi1m3mme0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMtOFHNwpScglcE2nFI9RDwSCgoKs_vCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170204986631-ejsafuj5hu0pqfd5sv3qekhdi1m3mme0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

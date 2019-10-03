@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UserProfile.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_img_display"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@drawable/image_splashscreen_bg"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profileActivity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/register_user_dummy"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/profileActivity_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="xxxxxxxxxxxxxx"
+            android:textSize="14dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear_layout_img_display"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="7dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="5dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="General Information"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Name : "
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.3"/>
+
+                            <TextView
+                                android:id="@+id/txtName_current_user_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="username"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.7"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Email : "
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.3"/>
+
+                            <TextView
+                                android:id="@+id/txtEmail_current_user_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="user@gmail.com"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.7"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Phone No. : "
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.3"/>
+
+                            <TextView
+                                android:id="@+id/txtPhone_current_user_profile"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="xxxxxxxxxx"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_weight="0.7"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/button_update_profile"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Update Profile"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+</RelativeLayout>
+
+
+
+

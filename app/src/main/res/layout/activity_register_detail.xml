@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/image_splashscreen_bg"
+        android:scaleType="centerCrop"
+        ></LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_register_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/register_user_dummy"
+        />
+
+    <TextView
+        android:id="@+id/img_descp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_register_user"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Click on Image to Upload Image"/>
+
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ProjectX"
+            android:textColor="#ffffff"
+            android:textSize="34dp" />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ffffff"
+        android:elevation="5dp"
+        android:layout_below="@+id/img_descp"
+        android:foreground="?selectableItemBackground"
+        app:cardCornerRadius="6dp"
+        app:contentPadding="4dp"
+        tools:targetApi="LOLLIPOP">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="31dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:hint="Enter Full Name"
+            android:textColorHint="@color/colorEditText">
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_person_outline_black_24dp"
+                android:ems="10"
+                android:paddingStart="5dp"
+                android:paddingEnd="8dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorEditText"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:layout_marginTop="26dp"
+            android:hint="Enter Phone No."
+            android:textColorHint="@color/colorEditText">
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_phone_android_black_24dp"
+                android:ems="10"
+                android:paddingStart="5dp"
+                android:paddingEnd="8dp"
+                android:inputType="phone"
+                android:textColor="@color/colorEditText"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="Update Details"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--<TextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_txt_sign_in"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Already have account?" />
+
+    <TextView
+        android:id="@+id/register_txt_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Signin here"
+        android:textColor="#2b73e1" />-->
+</RelativeLayout>

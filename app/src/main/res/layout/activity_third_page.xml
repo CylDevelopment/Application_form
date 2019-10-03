@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanCard.ThirdPage">
+
+    <TextView
+        android:id="@+id/txtView_thirdPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Third Page"
+        android:textSize="14sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_thirdPage"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_doc_Proof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="monospace"
+                android:text="Document Proof"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_idProof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_doc_Proof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="ID Proof*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_idProof"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_idProof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner_idProof"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_idProof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/txt_address_proof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_idProof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Address Proof*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_address_proof"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_address_proof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner_address_proof"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_address_proof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/txt_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_address_proof"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="Income Source"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_income">
+
+                <RadioButton
+                    android:id="@+id/tv_radiobutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="No Income"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/tv_radiobutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Business/Profession"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/tv_radiobutton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Salary"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/tv_radiobutton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="House Property"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/tv_radiobutton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Other Sources"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtTxt_income"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/radio_income"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner_income"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/radio_income"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/txt_declaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_income"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="monospace"
+                android:text="DECLARATION"
+                android:textColor="@color/colorBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_declaration_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_declaration"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="@string/declaration"
+                android:textColor="#0A0C0C"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <CheckBox
+                android:id="@+id/checkbox_declaration_confirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/txt_declaration_detail"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="I Agree To All Terms Terms And Conditions "
+                android:textColor="#111010"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_previous_third_page"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textColor="#FAF2F2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_submit_third_page"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="Submit"
+            android:textColor="#F3EDED"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

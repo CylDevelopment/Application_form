@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    tools:context=".PanCard.FirstPage">
+
+    <TextView
+        android:id="@+id/info_application_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="APPLICATION FOR PAN CARD"
+        android:textColor="#0949AA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtView_enterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_application_form"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+        android:gravity="center|top"
+        android:padding="4dp"
+        android:text="Enter All  the Details"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_enterInfo">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/txt_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Full Name*"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerTitle"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/txt_fullName"
+                android:background="@drawable/edit_box"
+                android:spinnerMode="dialog"></Spinner>
+
+            <EditText
+                android:id="@+id/edtTxt_UserName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/spinnerTitle"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_box"
+                android:fitsSystemWindows="true"
+                android:hint="First Name"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_fatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_UserName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Father Name*"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTxt_fatherName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_fatherName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_box"
+                android:fitsSystemWindows="true"
+                android:hint="First Name"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_fatherName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Number*"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTxt_mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_mobileNo"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_box"
+                android:fitsSystemWindows="true"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxt_mobileNo"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Email ID*"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTxt_emailId"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_emailId"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_box"
+                android:fitsSystemWindows="true"
+                android:hint="E-Mail"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_emailId"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Date Of Birth*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_birthdate"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_birthdate"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:clickable="true"
+                android:editable="false"
+                android:fitsSystemWindows="true"
+                android:hint="YYYY/MM/DD"
+                android:inputType="none"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:hint="First Page"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="next"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

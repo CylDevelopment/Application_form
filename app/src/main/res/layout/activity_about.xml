@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.About"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="About"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginStart="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#878585"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="-17dp"
+            android:text="Terms of Services"
+
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_terms_n_services"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="370dp"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#878585"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="App Version"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="v13.3.3 Live"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#878585"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Open Sources Libraries"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginStart="15dp"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_terms_n_services"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="370dp"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#878585"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"/>
+
+
+
+
+
+
+
+</LinearLayout>

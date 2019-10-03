@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".PanCard.SecondPage">
+
+    <TextView
+        android:id="@+id/panCard_secondPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:hint="Second Page"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView_secondPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panCard_secondPage"
+        android:fillViewport="true"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Gender*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:id="@+id/radio_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_gender"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Male"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Female"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/txt_Resident_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_gender"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="monospace"
+                android:text="Address"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_house_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Resident_address"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="House No/Building/Village*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_houseNo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_house_no"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_enter_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_houseNo"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Area/Road/Street*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_street_Area"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_enter_area"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_street_Area"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="City/Town/District*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_city"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/txt_city"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_city"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="State*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_state"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_state"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_pinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_state"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Pincode/Zip code*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_pinCode"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_pinCode"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:maxLength="6"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTxt_pinCode"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Nationality*"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtTxt_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_nationality"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_box"
+                android:paddingStart="8dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pevious_second_page"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textColor="#FAF2F2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_next_second_page"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="serif"
+            android:padding="5dp"
+            android:text="Next"
+            android:textColor="#F3EDED"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
